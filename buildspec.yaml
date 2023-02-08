@@ -12,3 +12,4 @@ phases:
   post_build:
     commands:
       - aws s3 cp --recursive ./build s3://vignesh-test-bckt/
+      - aws autoscaling start-instance-refresh --auto-scaling-group-name appasg
