@@ -11,4 +11,4 @@ phases:
 
   post_build:
     commands:
-      - aws s3 cp -r ./build s3://vignesh-test-bckt/
+      - aws s3 cp --recursive ./build s3://vignesh-test-bckt/
