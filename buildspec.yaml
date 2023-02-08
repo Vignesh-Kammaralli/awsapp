@@ -3,12 +3,12 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      -npm install
+      - npm install
 
   build:
     commands:
-      -npm run build
+      - npm run build
 
   post_build:
     commands:
-      aws s3 cp -r ./build s3://vignesh-test-bckt/
+      - aws s3 cp -r ./build s3://vignesh-test-bckt/
